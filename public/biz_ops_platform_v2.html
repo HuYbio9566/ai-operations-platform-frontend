@@ -705,7 +705,7 @@ const ENTRY_BOTS = {
 // 数字人 → 所属业务入口（反向映射，用于业务用户落点）
 const BOT_ENTRY = { it:'it', admin:'admin', jingfen:'jingfen', security:'security', testA:'test', testB:'test' };
 const USERS = {
-  bujun:   { name:'卜俊', dept:'AI办公团队', role:'内部运营 · 超管', bots:['it','admin','jingfen','security','testA','testB'], super:true,  avatar:'卜' },
+  bujun:   { name:'演示管理员', dept:'AI办公团队', role:'公开演示 · 超管', bots:['it','admin','jingfen','security','testA','testB'], super:true,  avatar:'演' },
   gaolei:  { name:'高磊总', dept:'—', role:'超管', bots:['it','admin','jingfen','security','testA','testB'], super:true, avatar:'高' },
   wangit:  { name:'王工', dept:'IT 服务部', role:'IT业务侧', bots:['it'], super:false, avatar:'王' },
   zhangx:  { name:'张姐', dept:'行政部', role:'行政业务侧', bots:['admin'], super:false, avatar:'张' },
@@ -991,16 +991,16 @@ const ROLE_LABEL = { user:'普通用户', accessible:'可访问', admin:'管理�
 const ORG_USERS = [
   { u:'演示超管A', acct:'admin.a@example.com', dept:'AI办公团队', path:'演示集团 / AI办公团队', role:'super_admin', locked:true },
   { u:'演示超管B', acct:'admin.b@example.com', dept:'管理层', path:'演示集团 / 管理层', role:'super_admin', locked:true },
-  { u:'王工', acct:'wang@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'admin', grants:{ it:{ it:['dash','qa','groups','seaf'] } } },
-  { u:'李工', acct:'li@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'admin', grants:{ it:{ it:['dash','qa'] } } },
-  { u:'刘工', acct:'liu@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'user' },
-  { u:'张姐', acct:'zhang@example.com', dept:'行政部', path:'演示集团 / 集团办公室 / 行政部', role:'admin', grants:{ admin:{ admin:['dash','qa','groups','seaf'] } } },
-  { u:'孙工', acct:'sun@example.com', dept:'行政部', path:'演示集团 / 集团办公室 / 行政部', role:'user' },
-  { u:'陈工', acct:'chen@example.com', dept:'测试业务部', path:'演示集团 / 测试业务部', role:'admin', grants:{ test:{ testA:['dash','qa','groups','seaf'], testB:['dash','qa'] } } },
-  { u:'安工', acct:'an@example.com', dept:'安全终端部', path:'演示集团 / 安全终端部', role:'accessible', grants:{ security:{ security:['dash','qa','groups','seaf'] } } },
-  { u:'周工', acct:'zhou@example.com', dept:'安全终端部', path:'演示集团 / 安全终端部', role:'user' },
-  { u:'吴工', acct:'wu@example.com', dept:'经分业务部', path:'演示集团 / 经分业务部', role:'user' },
-  { u:'赵工', acct:'zhao@example.com', dept:'AI办公团队', path:'演示集团 / AI办公团队', role:'admin', grants:{ it:{ it:['dash','qa'] }, admin:{ admin:['dash'] }, test:{ testA:['dash'] } } },
+  { u:'演示用户C', acct:'wang@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'admin', grants:{ it:{ it:['dash','qa','groups','seaf'] } } },
+  { u:'演示用户D', acct:'li@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'admin', grants:{ it:{ it:['dash','qa'] } } },
+  { u:'演示用户E', acct:'liu@example.com', dept:'IT服务部', path:'演示集团 / 数智化产品部 / IT服务部', role:'user' },
+  { u:'演示用户F', acct:'zhang@example.com', dept:'行政部', path:'演示集团 / 集团办公室 / 行政部', role:'admin', grants:{ admin:{ admin:['dash','qa','groups','seaf'] } } },
+  { u:'演示用户G', acct:'sun@example.com', dept:'行政部', path:'演示集团 / 集团办公室 / 行政部', role:'user' },
+  { u:'演示用户H', acct:'chen@example.com', dept:'测试业务部', path:'演示集团 / 测试业务部', role:'admin', grants:{ test:{ testA:['dash','qa','groups','seaf'], testB:['dash','qa'] } } },
+  { u:'演示用户I', acct:'an@example.com', dept:'安全终端部', path:'演示集团 / 安全终端部', role:'accessible', grants:{ security:{ security:['dash','qa','groups','seaf'] } } },
+  { u:'演示用户J', acct:'zhou@example.com', dept:'安全终端部', path:'演示集团 / 安全终端部', role:'user' },
+  { u:'演示用户K', acct:'wu@example.com', dept:'经分业务部', path:'演示集团 / 经分业务部', role:'user' },
+  { u:'演示用户L', acct:'zhao@example.com', dept:'AI办公团队', path:'演示集团 / AI办公团队', role:'admin', grants:{ it:{ it:['dash','qa'] }, admin:{ admin:['dash'] }, test:{ testA:['dash'] } } },
 ];
 
 /* ══════════════ 状态 ══════════════ */
