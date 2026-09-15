@@ -1,5 +1,7 @@
 # AI 运营驾驶舱前端
 
+当前发布版本：`v1.1.0`
+
 Vue 3 + Vite 实现的 AI 运营数据看板界面。
 
 在线演示：<https://huybio9566.github.io/ai-operations-platform-frontend/>
